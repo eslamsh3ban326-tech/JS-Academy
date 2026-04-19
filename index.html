@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Academy - أكاديمية جافا سكريبت</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="address-bar">
+            <p><i class="fas fa-map-marker-alt"></i> مدرسة شاوة الثانوية المشتركة</p>
+        </div>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-code"></i> JS Academy
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#topics">المواضيع</a></li>
+                <li><a href="#emotions">التفاعلات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>أهلاً بك في أكاديمية JavaScript</h1>
+            <p>تعلم قواعد JavaScript بأسلوب تفاعلي وممتع مع تأثيرات عاطفية مذهلة!</p>
+            <a href="#topics" class="cta-button">ابدأ التعلم الآن</a>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="topics">
+        <h2 class="section-title fade-in">المواضيع الأساسية في JavaScript</h2>
+        <div class="topics-grid">
+            <div class="topic-card fade-in" data-topic="variables">
+                <div class="topic-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>المتغيرات</h3>
+                <p>تعلم كيفية إعلان المتغيرات باستخدام var، let، وconst مع أمثلة عملية</p>
+            </div>
+            <div class="topic-card fade-in" data-topic="functions">
+                <div class="topic-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>الدوال</h3>
+                <p>فهم أنواع الدوال المختلفة وكيفية استخدامها بفعالية</p>
+            </div>
+            <div class="topic-card fade-in" data-topic="arrays">
+                <div class="topic-icon">
+                    <i class="fas fa-list"></i>
+                </div>
+                <h3>المصفوفات</h3>
+                <p>الطرق والخصائص الخاصة بالمصفوفات مع أمثلة تفاعلية</p>
+            </div>
+            <div class="topic-card fade-in" data-topic="loops">
+                <div class="topic-icon">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <h3>الحلقات</h3>
+                <p>for، while، do-while مع أمثلة عملية ومقارنة بينها</p>
+            </div>
+            <div class="topic-card fade-in" data-topic="conditions">
+                <div class="topic-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <h3>الشرطيات</h3>
+                <p>if، else if، switch مع أمثلة على الاستخدام الصحيح</p>
+            </div>
+            <div class="topic-card fade-in" data-topic="objects">
+                <div class="topic-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <h3>الكائنات</h3>
+                <p>فهم هيكل الكائنات وخصائصها والطرق المرتبطة بها</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Modal -->
+    <div id="topicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Emotions Section -->
+    <section id="emotions" class="emotion-section">
+        <h2 class="section-title fade-in">تفاعلات عاطفية ممتعة</h2>
+        <div class="emotions-container">
+            <div class="emotion" data-emotion="happy">
+                <i class="fas fa-grin-stars"></i>
+                <h4>سعيد</h4>
+            </div>
+            <div class="emotion" data-emotion="love">
+                <i class="fas fa-heart"></i>
+                <h4>حب</h4>
+            </div>
+            <div class="emotion" data-emotion="surprised">
+                <i class="fas fa-surprise"></i>
+                <h4>مندهش</h4>
+            </div>
+            <div class="emotion" data-emotion="sad">
+                <i class="fas fa-frown"></i>
+                <h4>حزين</h4>
+            </div>
+            <div class="emotion" data-emotion="angry">
+                <i class="fas fa-angry"></i>
+                <h4>غاضب</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emotion Response Notification -->
+    <div id="emotionNotification" class="emotion-notification">
+        <div class="notification-content">
+            <span id="emotionIcon" style="font-size: 3rem; display: block; margin-bottom: 1rem;"></span>
+            <p id="emotionResponse" style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;"></p>
+            <small id="emotionSmall" style="color: #999;"></small>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>أكاديمية جافا سكريبت</h4>
+                <p>منصة تعليمية تفاعلية لتعلم JavaScript بطريقة ممتعة وسهلة</p>
+            </div>
+            <div class="footer-section">
+                <h4>الروابط المهمة</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#topics">المواضيع</a></li>
+                    <li><a href="#emotions">التفاعلات</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>تواصل معنا</h4>
+                <p>📧 email@example.com</p>
+                <p>📱 01558458154</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 أكاديمية جافا سكريبت. جميع الحقوق محفوظة © </p>
+            <p>تم تصميم هذا المشروع بواسطة <strong>اسلام شعبان</strong></p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
