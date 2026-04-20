@@ -26,7 +26,7 @@
  }
 
  .address-bar {
-     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+     background: linear-gradient(90deg, #ff6060, #4ecdc4);
      color: white;
      padding: 0.8rem;
      text-align: center;
@@ -312,6 +312,42 @@
      font-size: 3rem;
      margin-bottom: 1rem;
      display: block;
+ }
+
+ /* Unique gradient colors for each emotion icon */
+ .emotion[data-emotion="happy"] i {
+     background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+ }
+
+ .emotion[data-emotion="love"] i {
+     background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+ }
+
+ .emotion[data-emotion="surprised"] i {
+     background: linear-gradient(135deg, #9370DB 0%, #4169E1 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+ }
+
+ .emotion[data-emotion="sad"] i {
+     background: linear-gradient(135deg, #4A90E2 0%, #2E5C8A 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+ }
+
+ .emotion[data-emotion="angry"] i {
+     background: linear-gradient(135deg, #FF4500 0%, #DC143C 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
  }
 
  /* Code Demo */
